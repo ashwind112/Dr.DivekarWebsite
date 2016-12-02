@@ -1,15 +1,30 @@
 import React, { Component } from 'react';
 import Home from './Home';
+import Header from './Header'
+import Footer from './Footer'
 import Treatment from './Treatment'
 import { Tab, Nav,NavItem,Row,Col } from 'react-bootstrap'
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state={currentKey : 1}
+    this.changeTab=this.changeTab.bind(this)
+  }
+  changeTab(selectedKey){
+    this.setState({currentKey : selectedKey})
+  }
   render() {
     return (
-      <div>
-        <Tab.Container defaultActiveKey={1} id="MainTab">
+      <div className="container-fluid">
+      <header>
+        <div className="jumbotron">
+          <Header />
+        </div>
+      </header>
+        <Tab.Container defaultActiveKey={this.state.currentKey} id="MainTab">
         <Row className="clearfix">
         <Col>
-          <Nav bsStyle='pills'>
+          <Nav bsStyle='pills' >
             <NavItem eventKey={1}>Home</NavItem>
             <NavItem eventKey={2}>How We Treat</NavItem>
           </Nav>
@@ -29,6 +44,9 @@ class App extends Component {
           </Col>
           </Row>
         </Tab.Container>
+        <footer className="container-fluid padding">
+          <Footer changeTab={this.changeTab}/>
+        </footer>
       </div>
       );
   }
