@@ -23,24 +23,27 @@ class App extends Component {
       </header>
         <Tab.Container defaultActiveKey={this.state.currentKey} id="MainTab">
         <Row className="clearfix">
-        <Col>
-          <Nav bsStyle='pills' >
+
+        <Col lg={2}>
+          <Nav bsStyle='pills' stacked>
             <NavItem eventKey={1}>Home</NavItem>
             <NavItem eventKey={2}>How We Treat</NavItem>
           </Nav>
-          <Tab.Content animation>
-          <br></br>
-            <Tab.Pane eventKey={1}>
-              <div className="container-fluid padding panel panel-default">
-                <Home />
-              </div>
-            </Tab.Pane>
-             <Tab.Pane eventKey={2}>
-              <div className="container-fluid padding panel panel-default">
-                <Treatment />
-              </div>
-            </Tab.Pane>
-          </Tab.Content>
+        </Col>
+          <Col lg={10}> 
+            <Tab.Content animation>
+  
+              <Tab.Pane eventKey={1}>
+                <div className="container-fluid padding panel panel-default">
+                  <Home />
+                </div>
+              </Tab.Pane>
+              <Tab.Pane eventKey={2}>
+                <div className="container-fluid padding panel panel-default">
+                  <Treatment />
+                </div>
+              </Tab.Pane>
+            </Tab.Content>
           </Col>
           </Row>
         </Tab.Container>
