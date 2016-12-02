@@ -19,6 +19,9 @@ class VaricoseVeins extends Component{
                                     <NavItem eventKey={2}>
                                         Causes
                                     </NavItem>
+                                    <NavItem eventKey={3}>
+                                        Symtomps
+                                    </NavItem>
                                 </Nav>
                                 <Tab.Content animation>
                                 <br></br>
@@ -47,8 +50,28 @@ class VaricoseVeins extends Component{
                                                 <li><h5>Injury or inflammation of the veins</h5></li>
                                                 <li><h5>Chronic constipation may contribute to the development of rectal varicose veins (haemorrhoids)</h5></li>
                                             </ul>
-                                        
-                                    </Tab.Pane>                                
+                                    </Tab.Pane>  
+                                    <Tab.Pane eventKey={3}>
+                                        <p className="lead">
+                                            Varicose veins may not cause any pain. Signs you may have with varicose veins include
+                                        </p>
+                                        <ul>
+                                            <li>Veins that are dark purple or blue in color</li>
+                                            <li>Veins that appear twisted and bulging; often like cords on your legs</li>
+                                        </ul>
+                                        <p className="lead">
+                                            When painful signs and symptoms occur, they may include:
+                                        </p>
+                                        <ul>
+                                            <li><h5>An achy or heavy feeling in your legs</h5></li>
+                                            <li><h5>Burning, throbbing, muscle cramping and swelling in your lower legs</h5></li>
+                                            <li><h5>Worsened pain after sitting or standing for a long time</h5></li>
+                                            <li><h5>Itching around one or more of your veins</h5></li>
+                                            <li><h5>Bleeding from varicose veins</h5></li>
+                                            <li><h5>A painful cord in the vein with red discoloration of the skin</h5></li>
+                                            <li><h5><p>Color changes, hardening of the vein, inflammation of the skin or skin ulcers near your ankle, which can mean you have a serious form of vascular disease that requires medical attention</p></h5></li>                                            
+                                        </ul>
+                                    </Tab.Pane>                              
                                 </Tab.Content>
                             </Col>
                         </Row>
