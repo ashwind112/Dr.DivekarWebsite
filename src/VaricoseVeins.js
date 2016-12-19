@@ -22,6 +22,12 @@ class VaricoseVeins extends Component{
                                     <NavItem eventKey={3}>
                                         Symtomps
                                     </NavItem>
+                                    <NavItem eventKey={4}>
+                                        Pathology
+                                    </NavItem>
+                                    <NavItem eventKey={5}>
+                                        Who is affected
+                                    </NavItem>
                                 </Nav>
                                 <Tab.Content animation>
                                 <br></br>
@@ -71,6 +77,19 @@ class VaricoseVeins extends Component{
                                             <li><h5>A painful cord in the vein with red discoloration of the skin</h5></li>
                                             <li><h5><p>Color changes, hardening of the vein, inflammation of the skin or skin ulcers near your ankle, which can mean you have a serious form of vascular disease that requires medical attention</p></h5></li>                                            
                                         </ul>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey={4}>
+                                        <p>
+                                            The venous anatomy of the leg is described with special reference to the superficial venous system. The histologic and histochemical differences between varicose and normal veins are presented. The pathophysiology of varicose veins is related to congential or acquired abnormalities of the deep venous system, venous valves, and/or fascial or vein wall weakness. Increased deep venous pressure may be both proximal and distal in etiology, arising from arteriovenous anastomoses, incompetent communicating veins, or venous obstruction. Primary valvular incompetence arises from venous obstruction (thrombosis), thrombophlebitis, or valvular agenesis. Secondary valvular incompetence occurs from deep venous obstruction or increased venous distensibility (usually secondary to circulating estrogens). Finally, fascial weakness of the vein wall or supporting fascia provided a genetic basis for the pathophysiology of varicose veins. Understanding the anatomy and pathophysiology of varicose veins should lead to a more rational and efficacious treatment.
+                                        </p>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey={5}>
+                                        <p>
+                                            There are no accurate figures for the number of people with <strong>varicose veins</strong>. Some studies suggest that 3 in 100 people have them at some time in their lives. Most people with varicose veins do not have an underlying disease and they usually occur for no apparent reason.
+                                        </p>
+                                        <p>
+                                            About 3 in 100 adults develop varicose veins at some time in their lives. More women than men develop varicose veins. Most people with varicose veins do not have an underlying disease and they occur for no apparent reason
+                                        </p>
                                     </Tab.Pane>                              
                                 </Tab.Content>
                             </Col>

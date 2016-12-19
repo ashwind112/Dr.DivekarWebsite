@@ -15,12 +15,15 @@ class RA extends Component{
                                     About
                                 </NavItem>
                                 <NavItem eventKey={2}>
-                                    What Is Affected
+                                    Causes
                                 </NavItem>
                                 <NavItem eventKey={3}> 
                                     Symtomps
                                 </NavItem>
                                 <NavItem eventKey={4} >
+                                    Pathology
+                                </NavItem>
+                                <NavItem eventKey={5} >
                                     Who is affected
                                 </NavItem>
                             </Nav>
@@ -62,6 +65,17 @@ class RA extends Component{
 
                                 </Tab.Pane>
                                 <Tab.Pane eventKey={4}>
+                                    <p>
+                                        Rheumatoid arthritis pathology consists of the changes that take place in the tissues that are involved in the disease. These changes are mainly seen in the synovium which is the tissue that is covering the inner lining of the joints.
+                                    </p>
+                                    <p>
+                                        The very first change that occurs in the synovium is a increase in the number cells of the synovial lining. The first cells to increase are the mononuclear cells which are a type of white blood cells with a single round to oval nucleus. These accumulate around the blood vessels of the synovium.
+                                    </p>
+                                    <p>
+                                        A increase in the cells also leads to a increase in the other substances in the tissue. This results in the synovium becoming thick and swollen. This synovium now protrudes into the joint cavity in the form of small finger like projections called villi.
+                                    </p>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey={5}>
                                     <p><strong>About 1.5 million people</strong> in the United States have rheumatoid arthritis (RA). Nearly three times as many women have the disease as men. In women, RA most commonly begins between ages 30 and 60. In men, it often occurs later in life. Having a family member with RA increases the odds of having RA; however, the majority of people with RA have no family history of the disease.
                                     </p>
                                     <p><strong>Arthritis affects 15% people i.e. over 180 million people in India.</strong> This prevalence is higher than many well known diseases such as diabetes, AIDS and cancer. Rheumatology is a holistic super specialty of Internal Medicine that deals with arthritis and rheumatism. Rheumatism indicates pain arising from joints or other elements of musculoskeletal system. There are over 100 rheumatological disorders classified by World Health Organization. Shortage of trained rheumatologists in India has led to management of these diseases by untrained doctors, practitioners of alternative medicine and quacks. Insufficient appreciation of rheumatological problems appears to be due to lack of knowledge about these conditions. arthritis-india aims at providing scientific information on arthritis and allied conditions and help patients overcome their problems. 
