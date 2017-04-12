@@ -6,6 +6,7 @@ import Type from './Type'
 import GetTreated from './GetTreated'
 import './App.css'
 import { Tab, Nav,NavItem,Row,Col,Navbar } from 'react-bootstrap'
+import {Link} from 'react-router'
 class App extends Component {
   constructor(props){
     super(props);
@@ -20,20 +21,19 @@ class App extends Component {
     return (
       <div>
       <header>
-        <div className="jumbotron colorBlue">
+        <div className="jumbotron">
           <Header />
         </div>
       </header>
-      <Navbar inverse>
+      <Navbar className="navbar-back">
       <Navbar.Header >
-        <Navbar.Brand>
-          Dr. Divekar's Treatment Center
+        <Navbar.Brand className="navitem-color">
+          <Link to="/">Dr. Divekar's Treatment Center</Link>
         </Navbar.Brand>
       </Navbar.Header>
-          <Nav>
-            <NavItem eventKey={1}>Home</NavItem>
-            <NavItem eventKey={2}>About Us</NavItem>
-            <NavItem eventKey={3}>Contact Us</NavItem>
+          <Nav pullRight>
+            <NavItem eventKey={1} >About Us</NavItem>
+            <NavItem eventKey={2} >Contact Us</NavItem>
           </Nav>
         </Navbar>
         <Tab.Container defaultActiveKey={1} id="MainTab">

@@ -1,3 +1,17 @@
+.navitem-color{
+  color: white;
+}
+.navbar-back{
+  background-color:#1c89ff;
+  color: white;
+}
+
+.navbar-default .navbar-brand{
+  color: white;
+}
+.navbar-default .navbar-nav>li>a{
+  color: white;
+}
 .colorBlue {
   color: white;
   background-image: url(jumbotron-background-pattern2.jpg);
